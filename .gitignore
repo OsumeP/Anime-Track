@@ -11,4 +11,4 @@ obj/
 *.tfstate.*
 *.tfvars
 *.out
-*.lock.hcl
+*.lock.hclv
