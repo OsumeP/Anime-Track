@@ -26,5 +26,5 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=test-results.trsx"
-        working-directory: src/AnimeTrack.Tests/
+        run: dotnet test src.sln --no-build --configuration Release --logger "trx;LogFileName=test-results.trsx"
+        working-directory: src
