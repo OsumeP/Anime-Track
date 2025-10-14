@@ -24,7 +24,8 @@ jobs:
 
       - name: Build the project
         run: dotnet build --no-restore --configuration Release
+        working-directory: src
 
       - name: Run tests
-        run: dotnet test src.sln --no-build --configuration Release --logger "trx;LogFileName=test-results.trsx"
+        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=test-results.trsx"
         working-directory: src
