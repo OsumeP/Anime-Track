@@ -27,4 +27,4 @@ jobs:
 
       - name: Run tests
         run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=test-results.trsx"
-        working-directory: src
+        working-directory: src/AnimeTrack.Tests/
